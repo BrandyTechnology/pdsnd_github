@@ -15,6 +15,24 @@ def get_filters():
         (str) month - name of the month to filter by, or "all" to apply no month filter
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
+    def month_input():
+        months = ['january', 'february', 'march', 'april', 'may', 'june']
+        while True:
+            concrete_month = input("Which month? January, February, March, April, May, or June?\n").lower()
+            if concrete_month in months:
+                return concrete_month
+            else:
+                continue
+    
+    def day_input():
+        days = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
+        while True:
+            concrete_day = input("Which day? Please type a day (Monday, Tuesday, ...). \n").lower()
+            if concrete_day in days:
+                return concrete_day
+            else:
+                continue
+
     print('Hello! Let\'s explore some US bikeshare data!')
     # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
 
