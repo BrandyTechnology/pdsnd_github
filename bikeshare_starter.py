@@ -23,7 +23,16 @@ def get_filters():
                 return concrete_month
             else:
                 continue
- 
+    
+    def day_input():
+        days = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
+        while True:
+            concrete_day = input("Which day? Please type a day (Monday, Tuesday, ...). \n").lower()
+            if concrete_day in days:
+                return concrete_day
+            else:
+                continue
+
     print('Hello! Let\'s explore some US bikeshare data!')
     # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
 
