@@ -11,3 +11,8 @@ Explore US Bikeshare Data
 This project is meant to be a tool for discovering bikeshare statistics in the
 US Cities **Chicago**, **New York City**, and **Washington, DC**.
 You get asked to enter the desired city and a _time range_ you want to filter through.
+
+### Credits
+
+This project is guided through the Udacity **Introduction to Python** course in the
+_Programming for Data Science with Python_ Nanodegree.
